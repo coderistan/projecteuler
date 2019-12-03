@@ -1,6 +1,6 @@
 #coding:utf-8
 #@coderistan
-# 3 basamaklı 2 sayıların çarpımından max olan palindrom sayıyı bulma
+# 3 basamaklı 2 sayının çarpımından max olan palindrom sayıyı bulma
 
 def isPalindrome(number):
    return str(number)==str(number)[::-1]
