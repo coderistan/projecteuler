@@ -23,9 +23,6 @@ number = """
 71636269561882670428252483600823257530420752963450
 """.replace("\n","")
 
-max_ = 0
-for i in range(len(number)-13):
-	result = reduce(lambda x,y:x*y,[int(k) for k in number[i:i+13]])
-	max_ = result if result>max_ else max_
+solution = lambda n:max([reduce(lambda x,y:x*y,[int(k) for k in number[i:i+n]]) for i in range(len(number)-n)])
 
-print(max_)
+print(solution(13))
