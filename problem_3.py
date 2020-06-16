@@ -1,6 +1,7 @@
 # coding:utf-8
 # @coderistan
 # asal bölenlerin en büyüğünü bulmak
+from math import sqrt
 
 def next_prime(max_number):
     for i in range(3,max_number):
@@ -8,7 +9,7 @@ def next_prime(max_number):
             continue
         else:
             find=True
-            for k in range(3,i):
+            for k in range(3,int(sqrt(i))):
                 if(i%k==0):
                     find=False
                     break
